@@ -1,0 +1,24 @@
+nav {
+    padding: 40px;
+    align-items: center;
+}
+
+.nav-item {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-self: center;
+    letter-spacing: 2px;
+}
+
+.nav-item > .nav-link {
+    font-family: 'Product Sans';
+    font-style: italic;
+    font-weight: bold;
+    color: #f0e5f6 !important;
+    font-size: 24px;
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+}
+

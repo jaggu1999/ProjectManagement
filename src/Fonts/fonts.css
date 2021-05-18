@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "Product Sans";
+    src: url(./Product\ Sans\ Bold.ttf) format('opentype');
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url(./Product\ Sans\ Bold\ Italic.ttf) format('opentype');
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url(./Product\ Sans\ Italic.ttf) format('opentype');
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url(./Product\ Sans\ Regular.ttf) format('opentype');
+}
+
+.Text-Regular {
+    font-family: "Product Sans";
+    letter-spacing: 2px;
+}
+
+.Text-Bold {
+    font-family: "Product Sans";
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.Text-Bold-Italic {
+    font-family: "Product Sans";
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-style: italic;
+    color: #4a2849;
+}

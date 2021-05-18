@@ -1,0 +1,310 @@
+.Top-Left-Circles {
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    top: 0px;
+    left: 0px;
+}
+
+.Section-Flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Section-Left {
+    display: flex;
+    width: 500px;
+    min-height: 100vh;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    background-color: #4a2849;
+}
+
+.Text-Left {
+    margin-left: -50px;
+    color: #fff;
+}
+
+.Section-Right {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+
+.Text-Right {
+    position: relative;
+    height: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.Column {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    justify-self: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Form-Field {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.Form-Label {
+    display: flex;
+    flex-direction: row-reverse;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: #eaeeff;
+    border-top-color: transparent;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: transparent;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: transparent;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 42px;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    color: #505a88;
+}
+
+.Form-Text {
+    width: 100%;
+    border-top-color: initial;
+    border-top-style: none;
+    border-top-width: initial;
+    border-right-color: initial;
+    border-right-style: none;
+    border-right-width: initial;
+    border-bottom-color: initial;
+    border-bottom-style: none;
+    border-bottom-width: initial;
+    border-left-color: initial;
+    border-left-style: none;
+    border-left-width: initial;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    outline-color: initial;
+    outline-style: none;
+    outline-width: initial;
+    background-image: none;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-family: "Product Sans";
+    font-weight: bold;
+    font-style: italic;
+    color: #4a2849 !important;
+}
+
+.Form-SVG-Email {
+    display: inline-block;
+    vertical-align: -0.125em;
+    height: 1em;
+    margin-top: 0px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    width: 1em;
+}
+
+.Form-SVG-Password {
+    display: inline-block;
+    vertical-align: -0.125em;
+    height: 1em;
+    margin-top: 0px;
+    margin-right: 5px;  
+    margin-bottom: 0px;
+    margin-left: 5px;
+    width: 0.875em;
+}
+
+.Form-Password {
+    display: flex;
+    flex-direction: row-reverse;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: rgb(234, 238, 255);
+    border-top-color: transparent;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: transparent;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: transparent;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 40px;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    color: #505a88;
+}
+
+.Name-Label {
+    display: flex;
+    flex-direction: row-reverse;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-top-color: transparent;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: transparent;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: transparent;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 60px;
+    width: 300px;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    color: #505a88;
+}
+
+.Name {
+    width: 100%;
+    border-top-color: initial;
+    border-top-style: none;
+    border-top-width: initial;
+    border-right-color: initial;
+    border-right-style: none;
+    border-right-width: initial;
+    border-bottom-color: initial;
+    border-bottom-style: none;
+    border-bottom-width: initial;
+    border-left-color: initial;
+    border-left-style: none;
+    border-left-width: initial;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    outline-color: initial;
+    outline-style: none;
+    outline-width: initial;
+    background-image: none;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-family: "Product Sans";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 24px;
+    color: #4a2849 !important;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #a5adc6;
+    letter-spacing: 2px;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    letter-spacing: 2px;
+    color: #a5adc6;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    letter-spacing: 2px;
+    color: #a5adc6;
+  }
