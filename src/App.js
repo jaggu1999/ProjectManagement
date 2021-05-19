@@ -9,9 +9,9 @@ import Signup from "./Pages/Signup";
 
 function App() {
   return (
-    //<IntroScreen></IntroScreen>
+    <IntroScreen></IntroScreen>
     //<Login></Login>
-    <Signup></Signup>
+    //<Signup></Signup>
   );
 }
 
