@@ -22,3 +22,9 @@ nav {
     color: #fff;
 }
 
+.nav-link.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
