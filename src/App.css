@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   background-color: #f6f8f9;
+  font-family: "Product Sans";
 }
 
 .App-logo {
@@ -44,4 +45,8 @@
   display: block;
   background-color: #e2eaee;
   z-index: 1;
+}
+
+html, body, #root {
+  height: 100%;
 }

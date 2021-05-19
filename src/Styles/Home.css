@@ -1,0 +1,10 @@
+.Home {
+    height: 100%;
+}
+
+.Section-Flex {
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100% - 96px);
+    width: 100%;
+}

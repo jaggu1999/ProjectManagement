@@ -4,7 +4,7 @@ import "../SVGs/LogoLight"
 import Logo from "../SVGs/LogoLight";
 import GetStarted from "../SVGs/GetStarted";
 
-const NavBar = () => {
+const NavBarIntro = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light" style={{backgroundColor:"#4a2849"}}>
             <div className="container-fluid">
@@ -31,4 +31,4 @@ const NavBar = () => {
     )
 }
 
-export default NavBar
+export default NavBarIntro
