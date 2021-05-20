@@ -291,6 +291,7 @@ form {
     font-style: italic;
     font-size: 24px;
     color: #4a2849 !important;
+    letter-spacing: 2px;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
