@@ -1,16 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 import NavBarHome from '../Components/NavBarHome'
 import Drawer from '../Components/Drawer';
 import "../Styles/Home.css";
 import ExpandedDrawer from "../Components/ExpandedDrawer";
 
 function Home() {
+    const [drawer, setDrawer] = useState(false);
+    const showDrawer = () => setDrawer(!drawer);
     return (
         <div className="Home">
             <NavBarHome></NavBarHome>
             <section className="Section-Flex">
                 <div>
-                    <ExpandedDrawer></ExpandedDrawer>
+                    { drawer ? <ExpandedDrawer></ExpandedDrawer> : <Drawer></Drawer> }
+                    { drawer===false ? 
+                        <a style={{position:"absolute",bottom:"42px", left:"42px"}} onClick={showDrawer}>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.6258 11.8477L9.86016 7.67579C9.83214 7.65544 9.79903 7.64326 9.76451 7.64058C9.72999 7.6379 9.6954 7.64483 9.66457 7.66061C9.63375 7.67638 9.6079 7.70038 9.58988 7.72995C9.57186 7.75952 9.56239 7.7935 9.5625 7.82813V8.92735C9.5625 9.16641 9.67735 9.39375 9.87188 9.53438L13.2797 12L9.87188 14.4656C9.67735 14.6063 9.5625 14.8313 9.5625 15.0727V16.1719C9.5625 16.3242 9.73594 16.4133 9.86016 16.3242L15.6258 12.1523C15.7289 12.0773 15.7289 11.9227 15.6258 11.8477Z" fill="#5E5858"/>
+                                <path d="M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5ZM12 20.7188C7.18594 20.7188 3.28125 16.8141 3.28125 12C3.28125 7.18594 7.18594 3.28125 12 3.28125C16.8141 3.28125 20.7188 7.18594 20.7188 12C20.7188 16.8141 16.8141 20.7188 12 20.7188Z" fill="#5E5858"/>
+                            </svg>
+                        </a>
+                        :
+                        <a style={{position:"absolute", bottom:"42px", left:"220px"}} onClick={showDrawer}>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.37422 12.1523L14.1398 16.3242C14.1679 16.3446 14.201 16.3567 14.2355 16.3594C14.27 16.3621 14.3046 16.3552 14.3354 16.3394C14.3662 16.3236 14.3921 16.2996 14.4101 16.27C14.4281 16.2405 14.4376 16.2065 14.4375 16.1719V15.0727C14.4375 14.8336 14.3227 14.6062 14.1281 14.4656L10.7203 12L14.1281 9.53437C14.3227 9.39374 14.4375 9.16874 14.4375 8.92734V7.82812C14.4375 7.67578 14.2641 7.58671 14.1398 7.67578L8.37422 11.8477C8.27109 11.9227 8.27109 12.0773 8.37422 12.1523Z" fill="#5E5858"/>
+                                <path d="M12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5ZM12 3.28125C16.8141 3.28125 20.7188 7.18594 20.7188 12C20.7188 16.8141 16.8141 20.7188 12 20.7188C7.18594 20.7188 3.28125 16.8141 3.28125 12C3.28125 7.18594 7.18594 3.28125 12 3.28125Z" fill="#5E5858"/>
+                            </svg>
+                        </a>
+                    }
                 </div>
             </section>
         </div>
