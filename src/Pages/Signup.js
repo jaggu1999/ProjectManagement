@@ -3,9 +3,11 @@ import "../Styles/LoginRegister.css";
 import "../Fonts/fonts.css";
 import Logo from "../SVGs/LogoDark";
 import { Link } from "react-router-dom";
+import firebaseInit from "../FirebaseAuthentication";
+import { withRouter } from "react-router";
+
 
 class Signup extends Component {
-
     constructor(props){
         super(props);
         this.state = {
@@ -19,7 +21,6 @@ class Signup extends Component {
             confirmpasswordError : ''
         }
     }
-
     handleChange = event => {
         const name = event.target.name;
         const value = event.target.value;
@@ -54,7 +55,7 @@ class Signup extends Component {
                 }
                 break;
             case 'confirmpassword':
-                if(value!=this.state.password){
+                if(value!==this.state.password){
                     confirmpasswordError = "Passwords not matched!";
                 }
                 else confirmpasswordError = "";
@@ -68,6 +69,14 @@ class Signup extends Component {
         e.preventDefault();
         const isValid = this.validate();
         if(isValid) {
+            this.signup();
+        }
+    }
+
+    signup(e) {
+        firebaseInit.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
+            console.log(u);
+            this.props.history.push("/home");
             this.setState({
                 name : '',
                 email : '',
@@ -78,8 +87,9 @@ class Signup extends Component {
                 passwordError : '',
                 confirmpasswordError : ''
             });
-            this.props.history.push('/home');
-        }
+        }).catch((err)=>{
+            console.log(err);
+        });
     }
 
     validate = () => {
@@ -99,7 +109,7 @@ class Signup extends Component {
             passwordError = "Password is too short!";
         }
         else passwordError = "";
-        if(this.state.password!=this.state.confirmpassword) {
+        if(this.state.password!==this.state.confirmpassword) {
             confirmpasswordError = "Passwords not matched!";
         }
         if(nameError || emailError || passwordError || confirmpasswordError) {
@@ -256,4 +266,4 @@ class Signup extends Component {
     }
 }
 
-export default Signup
+export default withRouter(Signup)
