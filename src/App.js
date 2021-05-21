@@ -7,21 +7,27 @@ import IntroScreen from "./Pages/IntroScreen";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
 import Home from "./Pages/Home";
-import NavBarHome from "./Components/NavBarHome"
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import React, {Component} from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React, { Component } from "react";
+import routes from "./route";
 
-function App() {
-  return (
-    <Router>
-      <Switch>
-        <Route path="/" exact component={IntroScreen}/>
-        <Route path="/login" exact component={Login}/>
-        <Route path="/signup" exact component={Signup}/>
-        <Route path="/home" exact component={Home}/>
-      </Switch>
-    </Router>
-  );
+export class App extends Component {
+		render() {
+				return (
+						<Router>
+								<div>
+										<routes></routes>
+								</div>
+								<Switch>
+										<Route path="/" exact><IntroScreen/></Route>
+										<Route path="/login"><Login/></Route>
+										<Route path="/signup"><Signup/></Route>
+										<Route path="/home"><Home/></Route>
+								</Switch>
+						</Router>
+				)
+		}
 }
 
-export default App;
+export default App
+
