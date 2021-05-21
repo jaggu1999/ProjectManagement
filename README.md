@@ -1,18 +1,59 @@
-# Getting Started with Create React App
+<br/>
+<p align="center">
+    <img src="./src/Images/Logo.png" alt="BugFix Logo">
+    <h3 align="center" style="font-family: Product Sans">Track, Manage & Fix Bugs Effectively</h3>
+    <h4 align="center">Universal Bug Tracking Management software for everyone.</h4> 
+    <p align="center">Quickly capture, assign and prioritize bugs with <strong>BugFix Software</strong> and track all aspects of the software development cycle.</p>
+<p>
+<br/>
+    
+# :rocket: Quick start
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Start forking and develop locally.
 
-## Available Scripts
+### Step 1: Clone the repo
+Fork the repository. then clone the repo locally by doing -
 
-In the project directory, you can run:
+```sh
+git clone https://github.com/jaggu1999/ProjectManagement.git
+```
 
-### `npm start`
+### Step 2: Install Dependencies
+cd into the directory
 
+```sh
+cd ProjectManagement
+```
+
+In the project directory you can do npm install.
+```sh
+npm install
+```
+
+### Step 3: Run with Server (Localhost)
+Run with npm to establish a localhost server
+```sh
+npm start
+```
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+    
+# ❤️ Sponsor
+   
+<h3>Liked my work? &nbsp&nbsp<a href="http://buymeacoffee.com/JagadeeshCh">Buy me a coffee ☕</a></h3> 
+
+
+## 👀 Updates
+<h3> Do watch this space for more updates.<h3>
+</br>
+
+## Other Available npm Scripts
+
+In the project directory, you can run:
+
 
 ### `npm test`
 
@@ -39,7 +80,11 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+# Learn More
+    
+## Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
