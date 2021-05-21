@@ -3,6 +3,8 @@ import "../Styles/LoginRegister.css";
 import "../Fonts/fonts.css";
 import Logo from "../SVGs/LogoDark";
 import { Link } from "react-router-dom";
+import firebaseInit from "../FirebaseAuthentication";
+import { withRouter } from "react-router";
 
 class Login extends Component {
     constructor(props){
@@ -45,16 +47,22 @@ class Login extends Component {
     handleSubmit = e => {
         e.preventDefault();
         const isValid = this.validate();
-        //console.log(isValid);
         if(isValid) {
+            this.login();
+        }
+    }
+
+    login(e) {
+        firebaseInit.auth().signInWithEmailAndPassword(this.state.email,this.state.password).then((u)=>{
+            console.log(u);
+            this.props.history.push('/home');
             this.setState({
                 email : '',
                 password : '',
                 emailError : '',
                 passwordError : ''
             });
-            this.props.history.push('/home');
-        }
+        });
     }
 
     validate = () => {
@@ -198,4 +206,4 @@ class Login extends Component {
     }
 }
 
-export default Login
+export default withRouter(Login)
